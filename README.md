@@ -1,2 +1,2 @@
 # leetcode
-practice coding questions
+Track your solutions to leetcode problems
