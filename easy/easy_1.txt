@@ -1,0 +1,25 @@
+Question 1:
+
+Given an integer x, return true if x is a 
+palindrome, and false otherwise.
+
+Solution(Python 3)
+
+-Note: For some reason negative numbers aren't can't be palindromes because
+       they contain a negative sign. So just deal with strings here.
+
+def isPalindrome(self, x: int) -> bool:
+    x_str = str(x)
+    x_reversed = x_str[::-1]
+    return x_str == x_reversed
+
+
+Solution(Java)
+
+-Note: Utilized the StringBuffer class and reverse capability in this solution
+
+    public boolean isPalindrome(int x) {
+        String xStr = Integer.toString(x);
+        String xReversed = new StringBuffer(xStr).reverse().toString();
+        return xStr.equals(xReversed);
+    }
